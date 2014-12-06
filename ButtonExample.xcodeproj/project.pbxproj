@@ -14,6 +14,8 @@
 		D45C8DFE1A332928006C7D85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45C8DFD1A332928006C7D85 /* Images.xcassets */; };
 		D45C8E011A332928006C7D85 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D45C8DFF1A332928006C7D85 /* LaunchScreen.xib */; };
 		D45C8E0D1A332928006C7D85 /* ButtonExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45C8E0C1A332928006C7D85 /* ButtonExampleTests.swift */; };
+		D45C8E171A332970006C7D85 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45C8E161A332970006C7D85 /* ButtonTableViewCell.swift */; };
+		D45C8E191A332C90006C7D85 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45C8E181A332C90006C7D85 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		D45C8E061A332928006C7D85 /* ButtonExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45C8E0B1A332928006C7D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D45C8E0C1A332928006C7D85 /* ButtonExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExampleTests.swift; sourceTree = "<group>"; };
+		D45C8E161A332970006C7D85 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		D45C8E181A332C90006C7D85 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +85,10 @@
 			children = (
 				D45C8DF41A332928006C7D85 /* AppDelegate.swift */,
 				D45C8DF61A332928006C7D85 /* MasterViewController.swift */,
+				D45C8E161A332970006C7D85 /* ButtonTableViewCell.swift */,
 				D45C8DF81A332928006C7D85 /* DetailViewController.swift */,
 				D45C8DFA1A332928006C7D85 /* Main.storyboard */,
+				D45C8E181A332C90006C7D85 /* Book.swift */,
 				D45C8DFD1A332928006C7D85 /* Images.xcassets */,
 				D45C8DFF1A332928006C7D85 /* LaunchScreen.xib */,
 				D45C8DF21A332928006C7D85 /* Supporting Files */,
@@ -218,6 +224,8 @@
 				D45C8DF91A332928006C7D85 /* DetailViewController.swift in Sources */,
 				D45C8DF71A332928006C7D85 /* MasterViewController.swift in Sources */,
 				D45C8DF51A332928006C7D85 /* AppDelegate.swift in Sources */,
+				D45C8E191A332C90006C7D85 /* Book.swift in Sources */,
+				D45C8E171A332970006C7D85 /* ButtonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
