@@ -10,7 +10,7 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
-    var objects = NSMutableArray()
+    var listOfBooks = NSMutableArray()
 
 
     override func awakeFromNib() {
@@ -21,8 +21,8 @@ class MasterViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        
-        self.objects.addObject(Book(["title":"First Book","author":"First Author","status":"Unread"]))
-        self.objects.addObject(Book(["title":"Second Book","author":"Second Author"]))
+        self.listOfBooks.addObject(Book(["title":"First Book","author":"First Author","status":"Unread"]))
+        self.listOfBooks.addObject(Book(["title":"Second Book","author":"Second Author"]))
         
     }
 
@@ -50,14 +50,15 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return listOfBooks.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("BookCell", forIndexPath: indexPath) as FancyTableViewCell
 
-        let object = objects[indexPath.row] as Book
-        cell.bookData = object
+        let singleBook = listOfBooks[indexPath.row] as Book
+        cell.bookData = singleBook
+        
         cell.updateUI()
         
         return cell
@@ -70,7 +71,7 @@ class MasterViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            objects.removeObjectAtIndex(indexPath.row)
+            listOfBooks.removeObjectAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.

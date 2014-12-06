@@ -10,11 +10,15 @@ import Foundation
 import UIKit
 
 class FancyTableViewCell : UITableViewCell {
+
+    var bookData : Book?
+
     
     @IBOutlet weak var stateIndicator: UIButton!
     @IBOutlet weak var bookTitle: UILabel!
     @IBOutlet weak var bookAuthor: UILabel!
-    var bookData : Book?
+    
+    
     @IBAction func stateIndicatorTapped(sender: UIButton) {
         if let bookData = bookData {
             bookData.incrementStatus()
